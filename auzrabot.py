@@ -34,7 +34,7 @@ async def on_message(message):
             await message.channel.send(embed=embed)
 
         if msg.content == a:
-            embed = discord.Embed(title="즐거운 젠 돼십시오", descriptio  n = message.author.mention + "인증코드를 정확히 입력하셨습니다 축하합니다 \n\n젠을 사용하기전, 젠 규칙을 어기지 않고 올바르게 사용할 것을 명심합니까? : 젠에 쿨타임 , 재고 구걸을 하시면 밴에 해당됍니다. 또 하루에 30개 넘게 뽑을시 밴에 해당됍니다 이것에 동의하십니까?", timestamp=message.created_at,
+            embed = discord.Embed(title="즐거운 젠 돼십시오", descriptio  n = message.author.mention + "인증코드를 정확히 입력하셨습니다 축하합니다 \n\n젠을 사용하기전 젠에 규칙은 없지만 관리자가 선을 넘었다 생각하면 밴에 해당됍니다 이것에 동의를 하십니까? ", timestamp=message.created_at,
             colour=discord.Colour.green()
     )
             m = await message.channel.send(embed=embed)
@@ -53,7 +53,7 @@ async def on_message(message):
                     await message.channel.send(f"{message.author.mention}", embed=noembed)
                 elif str(reaction.emoji) == "✅":
                     await m.delete()
-                    yesembed = discord.Embed(title="Sucsess!", description=f"완료!", color = discord.Color.green())
+                    yesembed = discord.Embed(title="규칙에 동의하여 이제 당신은 GENR입니다 ", description=f"축하드립니다", color = discord.Color.green())
                     m = await message.channel.send(f"{message.author.mention}", embed=yesembed)
                     role = discord.utils.get(message.author.guild.roles, name='genr')
                     await message.author.add_roles(role)
