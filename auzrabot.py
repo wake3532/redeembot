@@ -34,7 +34,7 @@ async def on_message(message):
             await message.channel.send(embed=embed)
 
         if msg.content == a:
-            embed = discord.Embed(title="즐거운 젠 돼십시오", descriptio  n = message.author.mention + "인증코드를 정확히 입력하셨습니다 축하합니다 \n\n젠을 사용하기전 젠에 규칙은 없지만 관리자가 선을 넘었다 생각하면 밴에 해당됍니다 이것에 동의를 하십니까? ", timestamp=message.created_at,
+            embed = discord.Embed(title="즐거운 젠 돼십시오", descriptio  n = message.author.mention + "인증코드를 정확히 입력하셨습니다 축하합니다 \n\n젠을 사용하기전 젠에 규칙은 없지만 관리자가 선을 넘었다 생각하면 밴에 해당됍니다 이것에 동의를 하십니까? " timestamp=message.created_at,
             colour=discord.Colour.green()
     )
             m = await message.channel.send(embed=embed)
