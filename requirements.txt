@@ -1,0 +1,9 @@
+discord.py==1.4.1
+asyncio==3.4.3
+openpyxl==3.0.5
+Dtime==0.3
+captcha==0.3
+bs4==0.0.1
+youtube_dl==2020.7.28
+requests==2.24.0
+selenium==3.141.0
