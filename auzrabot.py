@@ -49,7 +49,7 @@ async def on_message(message):
             else:
                 if str(reaction.emoji) == "❎":
                     await m.delete()
-                    noembed = discord.Embed(title=O"", description="알겠습니다.", color = discord.Color.red())
+                    noembed = discord.Embed(title=O", description="알겠습니다.", color = discord.Color.red())
                     await message.channel.send(f"{message.author.mention}", embed=noembed)
                 elif str(reaction.emoji) == "✅":
                     await m.delete()
