@@ -7,6 +7,10 @@ import os
 client = discord.Client()
 
 @client.event
+async def on_ready():
+    print('Starting')
+
+@client.event
 async def on_message(message):
     if message.content == "!redeem 24263REDEEMNWTHENFG":
         Image_captcha = ImageCaptcha()
