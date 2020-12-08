@@ -59,7 +59,7 @@ async def on_message(message):
                     role = discord.utils.get(message.author.guild.roles, name='genr')
                     await message.author.add_roles(role)
         
-            else:
+        else:
                 embed = discord.Embed(title="실패!", description = message.author.mention + ", __**Captcha**__ 인증코드가 올바르지 않아요! 다시 시도해봐요.", timestamp=message.created_at,
                 colour=discord.Colour.red()
     )
