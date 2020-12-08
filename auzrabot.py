@@ -3,6 +3,7 @@ import asyncio
 from captcha.image import ImageCaptcha
 import datetime
 import os
+import random
 
 client = discord.Client()
 
